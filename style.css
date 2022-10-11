@@ -1,0 +1,16 @@
+/* .container {
+    max-width: auto;
+    background-color: black;
+} */
+
+.bg-header {
+    background-color: #2C3E50;
+}
+
+.bg-green {
+    background-color: #1ABC9C;
+}
+
+.navbar {
+    background-color: #2C3E50;
+}
