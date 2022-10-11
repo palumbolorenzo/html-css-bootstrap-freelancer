@@ -14,3 +14,27 @@
 .navbar {
     background-color: #2C3E50;
 }
+
+.center {
+    text-align: center;
+}
+
+.bold {
+    text-transform: uppercase;
+}
+
+.white {
+    color: white;
+}
+
+.box {
+    margin: 2rem;
+}
+
+img {
+    max-width: 300px;
+}
+
+.border-radius {
+    border-radius: 10px;
+}
