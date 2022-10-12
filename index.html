@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap</title>
-    
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <!-- bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <!-- bootstrap css-->
@@ -16,52 +17,62 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <div class="">
-        <div class="pos-f-t">
-            <div class="collapse" id="navbarToggleExternalContent">
-              <div class="bg-dark p-5">
-                <h4 class="text-white">Collapsed content</h4>
-                <span class="text-muted">Toggleable via the navbar brand.</span>
-              </div>
+
+    <!-- header -->
+
+    <div class="bg-header">
+        <nav class="navbar navbar-expand-sm navbar-light container">
+            <a class="navbar-brand text-uppercase white" href="#">start bootstrap</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link white text-uppercase" href="#">portfolio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link white text-uppercase" href="#">about</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link white text-uppercase" href="#">contact</a>
+                  </li>
+              </ul>
             </div>
-            <nav class="navbar navbar-dark" style="background-color: #2C3E50;">
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon white bold">start bootstrap</span>
-              </button>
-            </nav>
-        </div>
+          </nav>
     </div>
 
-    <div class="">
-        <div class="row bg-green">
-            <div class="col-4 offset-4">
-                <img src="img/avatar.svg" alt="">
-            </div>
+    <!-- header end -->
 
-            <div class="">
-                <h1 class="center bold white">start bootstrap</h1>
-            </div>
+    <div class="bg-green">
+        <section class="container py-4 text-center text-uppercase">
+            <img class="col-3 mb-3" src="img/avatar.svg" alt="">
+            <h1 class="white">Start bootstrap</h1>
 
-            <!-- <div class="col-3">
-                <h1>start bootstrap</h1>
+            <div class="white"></div>
+            <div class="col-12 star">
+                <div>
+                    <i class="fa-solid fa-star text-center white"></i>
+                </div>
             </div>
+            <div class="white"></div>
+
+            <p class="white text-uppercase">graphic artist - web designer - illustrator</p>
+        </section>
         
-            <div class="col-3">
-                <h1>start bootstrap</h1>
-            </div>
-        
-            <div class="col-3">
-                <h1>start bootstrap</h1>
-            </div>
-        </div> -->
     </div>
 
     <div class="container">
         <div>
-            <h1 class="center bold padding">portfolio</h1>
+            <h1 class="center text-uppercase p-2">portfolio</h1>
         </div>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 padding">
+        <div class="col star">
+            <div class="text-center">
+                <i class="fa-solid fa-star"></i>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 p-2">
             <div class="col">
                 <div class="box">
                     <img src="img/cabin.png" class="border-radius img-fluid">
@@ -94,33 +105,67 @@
             </div>
         </div>
     </div>
-
-    <div class="bg-green">
-        <div class="container">
-            <div>
-                <h1 class="center bold white">about</h1>
-            </div>
-            <div class="row row-cols-2">
-                <div class="col-3 offset-3 white">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque odit maxime explicabo dolores in molestiae asperiores incidunt voluptate, animi perspiciatis sed neque id nostrum, maiores eveniet, voluptates sit reprehenderit eos.</p>
-                </div>
-    
-                <div class="col-3 white">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque odit maxime explicabo dolores in molestiae asperiores incidunt voluptate, animi perspiciatis sed neque id nostrum, maiores eveniet, voluptates sit reprehenderit eos.</p>
-                </div>
-            </div>
-
-            <button type="button" style="background-color: #1ABC9C; border-color: white;" class="btn btn-primary center">Download</button>
-        </div>
+   
     </div>
 
-    <div class="container">
+    <section class="bg-green p-4">
+		<div class="container text-center text-white">
+			<div class="col-10 mx-auto">
+				<h1 class="text-uppercase">About</h1>
+				<div class="col star">
+                    <div class="text-center">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+
+				<div class="overflow-hidden">
+					<div class="row text-start g-5">
+						<div class="col-12 col-sm-6">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta suscipit sit deserunt repellat optio impedit, libero maxime quo esse repellendus? Harum labore cupiditate dolore possimus necessitatibus perspiciatis facilis id hic!
+						</div>
+						<div class="col-12 col-sm-6">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi sapiente cupiditate velit nesciunt? Unde nihil illum amet iste fuga rerum vero similique porro eos animi laudantium veniam ratione, a eveniet.
+						</div>
+					</div>
+				</div>
+
+				<a class="btn btn-outline-light" href="#!">
+					Download
+				</a>
+			</div>
+		</div>
+	</section>
+
+    <div class="container-sm">
         <div>
-            <h1 class="center bold">contact me</h1>
+            <h1 class="text-center text-uppercase">contact me</h1>
+        </div>
+        <div class="col star">
+            <div class="text-center">
+                <i class="fa-solid fa-star"></i>
+            </div>
         </div>
         <div class="row">
-            
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Name</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Phone Number</label>
+                <input type="number" class="form-control" id="exampleFormControlInput1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
         </div>
+        <a class="btn" style="background-color: #1ABC9C; color: white;" href="#!">
+            Send
+        </a>
     </div>
     
 </body>
