@@ -3,6 +3,10 @@
     background-color: black;
 } */
 
+body {
+    margin-top: 56px;
+}
+
 .bg-header {
     background-color: #2C3E50;
 }
@@ -28,7 +32,12 @@
 }
 
 .box {
-    /* margin: 2rem; */
+    position: relative;
+}
+
+.box:hover {
+    opacity: 0.5;
+    filter: drop-shadow();
 }
 
 .padding {
@@ -36,9 +45,38 @@
 }
 
 img {
-    max-width: 300px;
+    width: 100%;
 }
 
 .border-radius {
     border-radius: 10px;
+}
+
+.box:hover::after {
+    content: '\F4FA';
+    font-family: bootstrap-icons;
+    position: absolute;
+    inset: 0;
+    color: white;
+    font-size: 10rem;
+    background-color: #1ABC9C80;
+    /* font-weight: bold; */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .info {
+    background-color: #3A546D;
+}
+
+footer .copyright {
+    background-color: #2C3E50;
+}
+
+.btn-social {
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 10em;
 }
